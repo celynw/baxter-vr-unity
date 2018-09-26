@@ -9,6 +9,8 @@ As a result, lots of this was created naïvely with very limited experience.
 However, it still works and is used for live demos.
 The code may be very loosely maintained but no further development is planned, although it could be fun I don't have time.
 
+Please feel free to make issues, ask questions, fork, etc.!
+
 ## Demo
 
 [![VR control for Baxter Robot with ROS in Unity](https://img.youtube.com/vi/jMmBaltZ3LY/0.jpg)](https://www.youtube.com/watch?v=jMmBaltZ3LY "VR control for Baxter Robot with ROS in Unity")
@@ -39,6 +41,17 @@ Others:
 - openni-launch
 
 ### Unity Project and Library
+
+The rosnode to communicate with the baxter computer must be compiled.
+
+NOTE: Set your IP address of the baxter computer in the [main file](../master/rosnode_windows/ROSnode.cpp).
+
+A command-line application is then called from the Unity game, with shared memory to transfer data between them.
+The solution can be found in `rosnode_windows`, and makes use of [`rosserial_windows`](http://wiki.ros.org/rosserial_windows "ROS.org"). Good luck!
+
+Open the Unity project, and open the `Main` scene.
+On pressing play, the command-line application should open in the foreground.
+It closes when the game closes.
 
 ## Setup
 
@@ -104,7 +117,9 @@ Seems to be more reliable if followed:
 
 ## Important Notes (probably worth reading)
 
-- If something isn't working, troubleshooting steps are:
+- If something isn't working:
+  - Restart roslaunch on baxterpc
+- Still not working?
   - Stop Unity game (cmd will close as well)
   - Restart roslaunch on baxterpc
   - Then re-play Unity
