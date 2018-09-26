@@ -23,6 +23,10 @@ This project consists of three parts:
 1. Unity project for interfacing in VR
 1. Solution for a Windows library callable from Unity, which connects to the linux computer.
 
+This used to work with the HTC Vive.
+Recently changed to Oculus for demos.
+Uses SteamVR so if you know what you're doing it's easy to configure.
+
 ### ROS Workspace
 
 An example workspace can be found in the `ros_ws` directory. The package is under `ros_ws/src/robotic_telepresence`
@@ -124,27 +128,15 @@ Seems to be more reliable if followed:
   - Restart roslaunch on baxterpc
   - Then re-play Unity
 
-- Collisions for the table are not set!
-    I used to do this by using "baxter_face.scene" and "baxter_table.scene".
-    You can do this by going into RViz which opens.
-    Add "Motion Planning" panel -> "Scene objects" -> "Import File".
-    These are now probably out of date! But may be useful. Look at the visualisation
-
 - roslaunch takes a long time to close, but it should close on error ("required" is set)
 
 - Yes, you can't see the grippers open or close in VR. You can hear them though...
-
-- Maximising RViz seems to crash it. Why is it so unreliable on this computer?!
 
 - If VR seems to be paused or black screen, you might need the "Game" tab open and focused in Unity
 
 - If you need to move virtual Baxter, I have a Unity GameObject called TRANSFORM on the top level.
 
 - The headset needs to be tracking (not flashing green) in order to enable other things...
-
-- Making a change to Unity when in game mode is TEMPORARY and will be lost when stopped. Pain in the ass for getting the point cloud transform
-
-- Kinect cable won't reach PC! So I haven't tested it. But it's possible it will just work!
 
 ## Contact
 
