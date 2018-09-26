@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<package>
+	<name>robotic_telepresence</name>
+	<version>0.0.0</version>
+	<description>Linux rosnode for 'VR for Baxter in Unity'</description>
+	<license>TODO</license>
+	<author email="c.walters@surrey.ac.uk">Celyn Walters</author>
+	<maintainer email="c.walters@surrey.ac.uk">Celyn Walters</maintainer>
+	<!-- <url type="website">http://wiki.ros.org/robotic_telepresence</url> -->
+	<buildtool_depend>catkin</buildtool_depend>
+</package>

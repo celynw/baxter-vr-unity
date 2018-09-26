@@ -1,0 +1,32 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 18.02.2016 14:30:04
+
+newmtl plastik
+	Ns 35.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0667 0.0667 0.0667
+	Kd 0.0471 0.0471 0.0471
+	Ks 0.4167 0.4167 0.4167
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Map__4468847_Falloff.tga
+	map_Kd Map__4468847_Falloff.tga
+	map_refl Map__2070296143_Raytrace.tga
+
+newmtl Material__45ffn
+	Ns 35.0000
+	Ni 1.5000
+	d 0.6600
+	Tr 0.3400
+	Tf 0.6600 0.6600 0.6600 
+	illum 2
+	Ka 0.6392 0.6392 0.6392
+	Kd 0.6039 0.6039 0.6039
+	Ks 0.4167 0.4167 0.4167
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Map__4468847_Falloff.tga
+	map_Kd Map__4468847_Falloff.tga
+	map_refl Map__2070296146_Raytrace.tga

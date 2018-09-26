@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ROS">
+      <UniqueIdentifier>{d1938489-cb9d-4042-b5ed-8e8d32f53dca}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FileMapping.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Joint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ros_lib\duration.cpp">
+      <Filter>ROS</Filter>
+    </ClCompile>
+    <ClCompile Include="ros_lib\time.cpp">
+      <Filter>ROS</Filter>
+    </ClCompile>
+    <ClCompile Include="ros_lib\WindowsSocket.cpp">
+      <Filter>ROS</Filter>
+    </ClCompile>
+    <ClCompile Include="ROSnode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FileMapping.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Joint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ros_lib\ros.h">
+      <Filter>ROS</Filter>
+    </ClInclude>
+    <ClInclude Include="ros_lib\WindowsSocket.h">
+      <Filter>ROS</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

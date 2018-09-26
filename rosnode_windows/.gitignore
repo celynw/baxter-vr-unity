@@ -1,0 +1,11 @@
+# SEE https://github.com/github/gitignore
+
+# My stuff
+ros_lib full/
+
+# Visual Studio
+Debug/
+*.VC.db
+*.opendb
+.vs/
+download.error

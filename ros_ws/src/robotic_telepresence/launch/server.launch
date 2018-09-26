@@ -1,0 +1,30 @@
+<launch>
+	<node name="rosserial_server" pkg="rosserial_server" type="socket_node" output="screen" required="true"/>
+	<node name="rosserial_message_info" pkg="rosserial_python" type="message_info_service.py" output="screen"/>
+
+	<!-- Can't remember if this is actually needed?? -->
+	<node name="JTAS" pkg="baxter_interface" type="joint_trajectory_action_server.py" output="screen"/>
+
+	<!-- Receive simple messages from VR computer, publish as requests -->
+	<node name="translate_requests" pkg="robotic_telepresence" type="translate_requests.py" output="screen"/>
+
+	<!-- Command a move based on those requests -->
+	<!-- WARNING! Don't maximise RViz, it crashes... -->
+	<include file="$(find baxter_moveit_config)/launch/baxter_grippers.launch"/>
+	<node name="moveit" pkg="robotic_telepresence" type="moveit.py" output="screen" required="true"/>
+
+	<!-- Activate grippers based on those requests -->
+	<node name="grippers" pkg="robotic_telepresence" type="grippers.py" output="screen"/>
+
+	<!-- Point cloud -->
+	<include file="$(find openni_launch)/launch/openni.launch">
+		<arg name="rgb_frame_id" value="camera_rgb_optical_frame"/>
+		<arg name="depth_frame_id" value="camera_depth_optical_frame"/>
+		<arg name="depth_registration" value="true"/>
+	</include>
+	<node name="kinect_sampler" pkg="robotic_telepresence" type="kinect_sampler" output="screen"/>
+
+</launch>
+
+
+<!-- <remap from="joint_states" to="robot/joint_states"/> -->

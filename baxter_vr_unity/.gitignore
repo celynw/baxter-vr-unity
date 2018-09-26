@@ -1,0 +1,14 @@
+# SEE https://github.com/github/gitignore
+
+# My stuff
+ROSnode/ros_lib full/
+
+# Unity
+Builds/
+Library/
+Temp/
+obj/
+.collabignore
+*.sln
+*.suo
+Assets/Executables/*
